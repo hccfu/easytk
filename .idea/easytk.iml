@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/taobao" isTestSource="false" packagePrefix="Hccfu\EasyTK\TaoBao\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pinduoduo" isTestSource="false" packagePrefix="Hccfu\EasyTK\PinDuoDuo\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vip" isTestSource="false" packagePrefix="Hccfu\EasyTK\Vip\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/suning" isTestSource="false" packagePrefix="Hccfu\EasyTK\SuNing\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Hccfu\EasyTK\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/jingdong" isTestSource="false" packagePrefix="Hccfu\EasyTK\JingDong\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

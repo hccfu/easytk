@@ -1,13 +1,33 @@
 {
-    "name": "hccfu/easytk",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "hcfu",
-            "email": "17605691233@163.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "hccfu/easytk",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hcfu",
+      "email": "17605691233@163.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0.0",
+    "ext-simplexml": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hccfu\\EasyTK\\": "src/",
+      "Hccfu\\EasyTK\\PinDuoDuo\\": "src/pinduoduo",
+      "Hccfu\\EasyTK\\TaoBao\\": "src/taobao",
+      "Hccfu\\EasyTK\\JingDong\\": "src/jingdong",
+      "Hccfu\\EasyTK\\SuNing\\": "src/suning",
+      "Hccfu\\EasyTK\\Vip\\": "src/vip"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  }
 }
