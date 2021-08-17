@@ -1,0 +1,13 @@
+{
+    "name": "hccfu/easytk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hcfu",
+            "email": "17605691233@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
