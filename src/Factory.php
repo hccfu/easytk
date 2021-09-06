@@ -10,6 +10,7 @@ namespace Hccfu\EasyTK;
 
 
 use Hccfu\EasyTK\TaoBao\Application as TaoBao;
+use Hccfu\EasyTK\JingDong\Application as JingDong;
 
 class Factory
 {
@@ -118,12 +119,28 @@ class Factory
      */
     protected function getClient(string $name, array $config)
     {
-        if ($name == "taobao") {
-            $c = new TaoBao();
-            $c->appkey = (string)$config['app_key'];
-            $c->secretKey = $config['app_secret'];
-            $c->format = isset($config['format']) ? $config['format'] : 'json';
-            return $c;
+        switch ($name) {
+            case 'taobao':
+                $c = new TaoBao();
+                $c->appkey = (string)$config['app_key'];
+                $c->secretKey = $config['app_secret'];
+                $c->format = isset($config['format']) ? $config['format'] : 'json';
+                return $c;
+                break;
+            case 'pinduoduo':
+                break;
+            case 'jingdong':
+                $c = new JingDong();
+                $c->appKey = (string)$config['app_key'];
+                $c->appSecret = $config['app_secret'];
+                $c->format = isset($config['format']) ? $config['format'] : 'json';
+                return $c;
+                break;
+            default:
+                throw new \Exception('当前所选平台不支持');
+                break;
         }
+
+
     }
 }
